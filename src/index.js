@@ -7,7 +7,7 @@ function extraiLinks(texto)
     const capturas = [...texto.matchAll(regex)];
     const resultados = capturas.map(captura => ({[captura[1]]: captura[2]}))
     return resultados.length !== 0 ? resultados: 'Não há links';
-
+ 
 }
 function tratarErro(erro){
 
